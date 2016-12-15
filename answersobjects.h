@@ -215,7 +215,7 @@ void functionalStyle()
     // Declare a pointer to the function type.
     using T_Func = std::function<std::string()>;
 
-    // We can use lamdas as anonymous functions passing pointer to the function as its argument
+    // We can use lambdas as anonymous functions passing pointer to the function as its argument
     auto lambda = [] (T_Func& func)
     {
         return func();
@@ -228,7 +228,7 @@ void functionalStyle()
                            " auto, lambdas, std::function and decltype ");
     };
 
-    // Just call lamda as an ordinary function
+    // Just call lambda as an ordinary function
     auto theObj = lambda(varFunc);
 
     // And here we declare a variable of the type deduced from lambda. Very cool feature!
